@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM</title>
+</head>
+<body>
+    <button onclick="openWin()">Create window</button>
+    <p id ='text'>I learning JavaScript events!</p>
+    <div>
+        <button onclick="changeCSS()">Change style!</button>
+    </div>
+    <div id="background">
+        <button id="1" onclick="changeBackground('blue')">Blue</button>
+        <button id="2" onclick="changeBackground('pink')">Pink</button>
+        <button id="3" onmousedown="changeBackground('brown')" onmouseup="changeBackground('white')">Brown or white</button>
+        <a id="link" target="_blank" onmouseover="changeBackground('yellow')" onmouseout="changeBackground('white')">Yellow or white</a>
+    </div>
+    <select name="names" id="nam">
+        <option value="Peter">Peter</option>
+        <option value="John">John</option>
+        <option value="Alise">Alise</option>
+        <option value="Alex">Alex</option>
+        <option value="Iren">Iren</option>
+    </select><button id="del" onclick="RemoveOption()">Delete</button><br>
+    <button id="live" onclick="LiveText('I was pressed!')" onmouseover="LiveText('Mouse on me!')" onmouseout="LiveText('Mouse is not on me!')">Live button!</button>  
+    <p id="txt"></p>      
+    <select name="countrys" id="country">
+        <option value="ger">Germany</option>
+        <option value="usa">USA</option>
+        <option value="ukr">Ukraine</option>
+    </select>    
+    <select name="cities" id="cities"></select>
+    <p id="countries"></p>        
+    <script src="BOM.js"></script>
+</body>
+</html>
